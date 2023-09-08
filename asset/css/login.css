@@ -1,0 +1,58 @@
+body {
+    background: #ececec;
+}
+
+.header-text a {
+ color: black;
+ font-size: 20px;
+ text-decoration: none;
+}
+
+.header-mobile a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: end !important;
+}
+
+.header-mobile a:hover {
+    color: blue;
+}
+
+.header-text a:hover {
+    color: blue;
+}
+
+.featured-image {
+    width: 350px;
+}
+
+.box-area {
+    width: 930px;
+}
+
+
+.log {
+    margin-top: 20px;
+}
+
+.left-box small {
+    width: 17rem;
+}
+
+.header-mobile a {
+    visibility: hidden;
+}
+
+@media (max-width: 765px) {
+    .header-text a {
+        visibility: hidden;
+    }
+    .header-mobile a {
+        visibility: visible;
+    }
+
+    .featured-image {
+        margin-left: 80px;
+    }
+}
