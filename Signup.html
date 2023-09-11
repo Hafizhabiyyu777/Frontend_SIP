@@ -27,32 +27,35 @@
 
         <!-- Right Box -->
         <div class="col-md-6">
-            <div class="row align-items-center">
+            <div class="row align-items-center" >
                 <div class="header-text mb-3">
                     <p style="text-align: end;"><a href="Index.html">X</a></p>
                     <p style="text-align: center;"><b>Form Pendaftaran</b></p>
                 </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control fomr-control-lg bg-light fs-6" placeholder="Username">
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control fomr-control-lg bg-light fs-6" placeholder="Email address">
-                </div>
-                <div class="input-group mb-3">
-                    <input type="password" class="form-control fomr-control-lg bg-light fs-6" placeholder="Password">
-                </div>
-                <div class="input-group mb-1">
-                    <input type="password" class="form-control fomr-control-lg bg-light fs-6" placeholder="Confirm Password">
-                </div>
-                <div class="input-group mb-5 d-flex justify-content-between log">
-
+                <form id="form-registrasi">
                     <div class="input-group mb-3">
-                        <button class="btn btn-lg btn-primary w-100 fs-6">Daftar</button>
+                        <input type="text" id="username" class="form-control fomr-control-lg bg-light fs-6" placeholder="Username" required>
                     </div>
-                    <div class="row">
-                        <small>have account? <a href="Login.html">Login</a></small>
+                    <div class="input-group mb-3">
+                        <input type="email" id="email" class="form-control fomr-control-lg bg-light fs-6" placeholder="Email address" required>
                     </div>
-                </div>
+                    <div class="input-group mb-3">
+                        <input type="password" id="password" class="form-control fomr-control-lg bg-light fs-6" placeholder="Password" required>
+                    </div>
+                    <div class="input-group mb-1">
+                        <input type="password" id="confirmpassword" class="form-control fomr-control-lg bg-light fs-6" placeholder="Confirm Password" required>
+                    </div>
+                    <div id="passwordError" class="text-danger"></div>
+                    <div id="emailExist" class="text-danger"></div>
+                    <div class="input-group mb-5 d-flex justify-content-between log">
+                        <div class="input-group mb-3">
+                            <button class="btn btn-lg btn-primary w-100 fs-6">Daftar</button>
+                        </div>
+                        <div class="row">
+                            <small>have account? <a href="Login.html">Login</a></small>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
 
